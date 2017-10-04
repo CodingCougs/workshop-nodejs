@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>reveal-md</title>
+        <link rel="stylesheet" href="./css/reveal.css">
+        <link rel="stylesheet" href="./css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="./css/highlight/zenburn.css">
+        <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print">
+
+    </head>
+    <body>
+
+        <div class="reveal">
+            <div class="slides"><section  data-markdown><script type="text/template"># Coding Cougs
+## NodeJS Workshop
+By
+* Haiden - (haiden.deaton@wsu.edu)
+* Randy -   (randy.tran@wsu.edu)
+
+</script></section><section  data-markdown><script type="text/template">
+
+# Follow along!
+
+* [input tiny url]
+
+</script></section><section  data-markdown><script type="text/template">
+
+# NVM
+
+## (Node Version Manager)
+
+Linux/Mac
+* https://github.com/creationix/nvm
+
+Windows
+* https://github.com/coreybutler/nvm-windows
+
+</script></section><section  data-markdown><script type="text/template">
+
+# Why use NVM?
+
+* Allows you to have multiple version of node.
+* Some project and libraries are node version specific.
+* Allows you to have more control over your dev enviorment
+* NodeJS is a vastly growing ecosystem
+  * Allows you to update your node faster without any hold up.
+
+```
+nvm 
+
+```
+</script></section><section ><section data-markdown><script type="text/template">
+
+# Commands
+```
+  nvm install <version> [arch] 
+```
+* The version can be a node.js version or "latest" for the latest stable version.
+```
+  nvm list [available]
+```
+* List the node.js installations.
+
+</script></section><section data-markdown><script type="text/template">
+
+# Commands cont.
+
+```
+  nvm uninstall <version>
+```
+
+  * Uninstall a specific version of Node
+
+```
+  nvm use [version] [arch]
+```
+
+  * Switches to a specifc installed version of node.
+
+```
+  nvm version      
+```
+
+  * Displays the version of NVM you have.
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+# NodeJS
+
+* What is it?
+  - A sever-side platform
+
+* Who made it?
+  - Ryan Dahl in 2009.
+
+</script></section><section data-markdown><script type="text/template">
+
+# Why use it?
+  - It was made for  building fast and scalable network applications.
+  - Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time    applications that run across distributed devices
+
+</script></section><section data-markdown><script type="text/template">
+
+# What is Node
+* Node.js applications are written in JavaScript, 
+  * Run within the Node.js runtime on OS X, Microsoft Windows, and Linux.
+* Provides npm to manage packages
+* Open Source aka Free!
+
+</script></section><section data-markdown><script type="text/template">
+ 
+# Who uses it
+
+<img src='img/netflix.svg' width='30%' />
+
+<img src='img/paypal.png' width='30%' />
+
+<img src='img/microsoft.svg' width='30%' />
+
+</script></section><section data-markdown><script type="text/template">
+
+# What can NodeJs do for you?
+
+* generate dynamic page content
+* create, open, read, write, delete, and close files on the server
+* add, delete, modify data in your database
+
+</script></section><section data-markdown><script type="text/template">
+
+# npm
+## (Node Package Manager)
+```
+$npm
+```
+
+* Bread and butter for node applications
+* All node commands start with npm
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+# package.json
+
+* Holds meta data relevant to the project.
+* Controls the dependancies in your project.
+* It allows script commands to be created.
+
+</script></section><section  data-markdown><script type="text/template">
+
+# Command: init
+```
+$npm init
+```
+* Creates a package.json file
+
+</script></section><section ><section data-markdown><script type="text/template">
+
+# Command: install
+```
+$npm i | $npm install
+```
+* Installs set npm modules from package.json
+
+</script></section><section data-markdown><script type="text/template">
+
+## Command: install cont.
+```
+$npm install [package]
+
+$npm install [-S | --save] [package]
+```
+* Installs a new package and any packages it depends on
+* Puts the installed package under dependencies
+
+</script></section><section data-markdown><script type="text/template">
+
+## Command: install cont.
+
+```
+$npm install [-g | --global] [package]
+```
+* Installs a new package and appends it to the environment path
+
+</script></section><section data-markdown><script type="text/template">
+
+## Command: install cont.
+
+ https://www.npmjs.com/
+
+</script></section></section><section  data-markdown><script type="text/template">
+# Command: uninstall
+```
+$npm uninstall | $npm rm
+```
+* Uninstalls unused node packages
+
+</script></section><section  data-markdown><script type="text/template">
+
+# Command: run
+```
+$npm run-script | $npm run
+```
+* Executes scripts from package.json
+* Scripts can be custom made
+
+</script></section><section  data-markdown><script type="text/template">
+# There are plenty more commands!
+https://docs.npmjs.com/
+
+</script></section><section  data-markdown><script type="text/template">
+# Workflow
+
+* After every pull or clone
+```
+$npm install
+``` 
+  * Installs all the necessary packages
+</script></section><section  data-markdown><script type="text/template">
+
+# Exercise
+
+## https://github.com/CodingCougs/workshop_node-demo</script></section></div>
+        </div>
+
+        <script src="./lib/js/head.min.js"></script>
+        <script src="./js/reveal.js"></script>
+
+        <script>
+            function extend() {
+              var target = {};
+              for (var i = 0; i < arguments.length; i++) {
+                var source = arguments[i];
+                for (var key in source) {
+                  if (source.hasOwnProperty(key)) {
+                    target[key] = source[key];
+                  }
+                }
+              }
+              return target;
+            }
+
+            // Optional libraries used to extend on reveal.js
+            var deps = [
+              { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: './plugin/zoom-js/zoom.js', async: true },
+              { src: './plugin/notes/notes.js', async: true },
+              { src: './plugin/math/math.js', async: true }
+            ];
+
+            // default options to init reveal.js
+            var defaultOptions = {
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              transition: 'default', // none/fade/slide/convex/concave/zoom
+              dependencies: deps
+            };
+
+            // options from URL query string
+            var queryOptions = Reveal.getQueryHash() || {};
+
+            var options = {};
+            options = extend(defaultOptions, options, queryOptions);
+        </script>
+
+
+        <script>
+            Reveal.initialize(options);
+        </script>
+    </body>
+</html>
