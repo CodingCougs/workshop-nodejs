@@ -52,7 +52,6 @@ vvv
 
 # Commands cont.
 
-
 ```
   nvm uninstall <version>
 ```
@@ -73,31 +72,45 @@ vvv
 
 ---
 
-
 # NodeJS
-## (Big Picture)
+
 * What is it?
+  - A sever-side platform
+
 * Who made it?
-* Why use it? Really fast
+  - Ryan Dahl in 2009.
 
----
+vvv
 
-# NodeJS 
-## (Small Picture)
-* Node applications are written in JavaScript
+# Why use it?
+  - It was made for  building fast and scalable network applications.
+  - Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time    applications that run across distributed devices
+
+vvv
+
+# What is Node
+* Node.js applications are written in JavaScript, 
+  * Run within the Node.js runtime on OS X, Microsoft Windows, and Linux.
 * Provides npm to manage packages
 * Open Source aka Free!
 
----
+vvv
+ 
+# Who uses it
 
-# NodeJS 
-## (Who uses it)
+* Netflix
+* PayPal 
+* Microsoft
 
-* Netflix [image]
-* PayPal [image]
-* Microsoft [image]
+vvv
 
----
+# What can NodeJs do for you?
+
+* generate dynamic page content
+* create, open, read, write, delete, and close files on the server
+* add, delete, modify data in your database
+
+vvv
 
 # npm
 ## (Node Package Manager)
@@ -133,7 +146,7 @@ $npm i | $npm install
 * Installs set npm modules from package.json
 
 ---
-# Command: install cont.
+# Command: install
 ```
 $npm i [package]
 
