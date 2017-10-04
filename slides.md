@@ -98,9 +98,11 @@ vvv
  
 # Who uses it
 
-* Netflix
-* PayPal 
-* Microsoft
+<img src='img/netflix.svg' width='30%' />
+
+<img src='img/paypal.png' width='30%' />
+
+<img src='img/microsoft.svg' width='30%' />
 
 vvv
 
@@ -125,9 +127,9 @@ $npm
 
 # package.json
 
+* Holds meta data relevant to the project.
 * Controls the dependancies in your project.
 * It allows script commands to be created.
-* important stuff
 
 ---
 
@@ -145,15 +147,31 @@ $npm i | $npm install
 ```
 * Installs set npm modules from package.json
 
----
-# Command: install
-```
-$npm i [package]
+vvv
 
-$npm i [-S | --save] [package]
+## Command: install cont.
 ```
-* Installs a new packages and any packages it depends on
+$npm install [package]
+
+$npm install [-S | --save] [package]
+```
+* Installs a new package and any packages it depends on
 * Puts the installed package under dependencies
+
+vvv
+
+## Command: install cont.
+
+```
+$npm install [-g | --global] [package]
+```
+* Installs a new package and appends it to the environment path
+
+vvv
+
+## Command: install cont.
+
+ https://www.npmjs.com/
 
 ---
 # Command: uninstall
@@ -172,7 +190,7 @@ $npm run-script | $npm run
 * Scripts can be custom made
 
 ---
-# There's commands plenty more!
+# There are plenty more commands!
 https://docs.npmjs.com/
 
 ---
@@ -188,4 +206,3 @@ $npm install
 # Exercise
 
 ## https://github.com/CodingCougs/workshop_node-demo
----
