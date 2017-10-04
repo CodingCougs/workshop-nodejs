@@ -24,10 +24,25 @@ Windows
 
 ---
 
-# NodeJS
-
+# NodeJS (Big Picture)
+* What is it?
+* Who made it?
+* Why use it? Really fast
 
 ---
+
+# NodeJS (Small Picture)
+* Node applications are written in JavaScript
+* Provides npm to manage packages
+* Open Source aka Free!
+
+---
+
+# NodeJS (Who uses it)
+
+* Netflix [image]
+* PayPal [image]
+* Microsoft [image]
 
 # npm
 ## (Node Package Manager)
@@ -35,11 +50,16 @@ Windows
 $npm
 ```
 
+* Bread and butter for node applications
 * All node commands start with npm
 
 ---
 
 # package.json
+
+* important stuff
+* important stuff
+* important stuff
 
 ---
 
@@ -89,6 +109,12 @@ https://docs.npmjs.com/
 
 ---
 # Workflow
+
+* After every pull or clone
+```
+$npm install
+``` 
+  * Installs all the necessary packages
 ---
 
 # Exercise
