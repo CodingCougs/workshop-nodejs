@@ -24,25 +24,80 @@ Windows
 
 ---
 
-# NodeJS (Big Picture)
+# Why use NVM?
+
+* Allows you to have multiple version of node.
+* Some project and libraries are node version specific.
+* Allows you to have more control over your dev enviorment
+* NodeJS is a vastly growing ecosystem
+  * Allows you to update your node faster without any hold up.
+
+```
+nvm 
+
+```
+---
+
+# Commands
+```
+  nvm install <version> [arch] 
+```
+* The version can be a node.js version or "latest" for the latest stable version.
+```
+  nvm list [available]
+```
+* List the node.js installations.
+
+vvv
+
+# Commands cont.
+
+
+```
+  nvm uninstall <version>
+```
+
+  * Uninstall a specific version of Node
+
+```
+  nvm use [version] [arch]
+```
+
+  * Switches to a specifc installed version of node.
+
+```
+  nvm version      
+```
+
+  * Displays the version of NVM you have.
+
+---
+
+
+# NodeJS
+## (Big Picture)
 * What is it?
 * Who made it?
 * Why use it? Really fast
 
 ---
 
-# NodeJS (Small Picture)
+# NodeJS 
+## (Small Picture)
 * Node applications are written in JavaScript
 * Provides npm to manage packages
 * Open Source aka Free!
 
 ---
 
-# NodeJS (Who uses it)
+# NodeJS 
+## (Who uses it)
 
 * Netflix [image]
 * PayPal [image]
 * Microsoft [image]
+
+---
 
 # npm
 ## (Node Package Manager)
@@ -57,8 +112,8 @@ $npm
 
 # package.json
 
-* important stuff
-* important stuff
+* Controls the dependancies in your project.
+* It allows script commands to be created.
 * important stuff
 
 ---
@@ -119,4 +174,5 @@ $npm install
 
 # Exercise
 
+## https://github.com/CodingCougs/workshop_node-demo
 ---
