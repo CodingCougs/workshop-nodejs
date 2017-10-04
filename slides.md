@@ -31,10 +31,16 @@ Windows
 
 # npm
 ## (Node Package Manager)
-* All node commands start with npm
 ```
 $npm
 ```
+
+* All node commands start with npm
+
+---
+
+# package.json
+
 ---
 
 # Command: init
@@ -44,13 +50,12 @@ $npm init
 * Creates a package.json file
 
 ---
+
 # Command: install
 ```
 $npm i | $npm install
 ```
-* Does the following
-  * Installs a new packages and any packages it depends on
-  * Installs set npm modules from package.json
+* Installs set npm modules from package.json
 
 ---
 # Command: install cont.
@@ -59,12 +64,33 @@ $npm i [package]
 
 $npm i [-S | --save] [package]
 ```
-* Installs package on local directory under dependencies
+* Installs a new packages and any packages it depends on
+* Puts the installed package under dependencies
 
 ---
 # Command: uninstall
 ```
 $npm uninstall | $npm rm
 ```
+* Uninstalls unused node packages
+
 ---
-# Command: 
+
+# Command: run
+```
+$npm run-script | $npm run
+```
+* Executes scripts from package.json
+* Scripts can be custom made
+
+---
+# There's commands plenty more!
+https://docs.npmjs.com/
+
+---
+# Workflow
+---
+
+# Exercise
+
+---
